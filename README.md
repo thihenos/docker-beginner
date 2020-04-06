@@ -19,8 +19,8 @@ docker build -t user/docker-node:0.1 .
 
 Comando para iniciar o container
 ```bash
-docker run --name docker-test user/docker-node:0.1 sh
-```
+ docker run --name docker-test -p 3000:3000 user/docker-node:0.1
+ ```
 
 License
 ----

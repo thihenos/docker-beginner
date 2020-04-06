@@ -4,7 +4,7 @@ app = express();
 const server = require('http').createServer(app);
 
 /* config express port */
-	app.listen(process.env.PORT || 3000, function(){
+	app.listen(3000, function(){
 		console.log('Server Started On Port 3000');
 	});
 
@@ -12,5 +12,4 @@ const server = require('http').createServer(app);
   app.get('/*', function(req, res){
     res.send('Ok!');
   });
-
 /* end config express port */
